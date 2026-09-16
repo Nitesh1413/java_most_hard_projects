@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JAVA APEX — High-Value Systems</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div>
+    <div class="brand">JAVA APEX</div>
+    <div class="sub">10 high-value systems · core Java only</div>
+  </div>
+  <button id="themeBtn" class="theme" aria-label="Toggle light/dark mode">☾</button>
+</header>
+
+<main class="shell">
+  <aside class="sidebar">
+    <div class="side-title">
+      <strong>Projects</strong>
+      <span id="progress"></span>
+    </div>
+    <input id="search" type="search" placeholder="Search projects...">
+    <div id="projectList"></div>
+  </aside>
+
+  <section class="main">
+    <section id="home" class="card home">
+      <div class="eyebrow">QUALITY OVER QUANTITY</div>
+      <h1>Build the hard core of valuable systems.</h1>
+      <p>
+        These projects take real-world decision, optimization, ranking, matching,
+        compilation and reliability problems and reduce them to core Java fundamentals.
+      </p>
+      <div class="stats">
+        <div><b>10</b><span>projects</span></div>
+        <div><b>362+</b><span>guided steps</span></div>
+        <div><b>50</b><span>test cases</span></div>
+      </div>
+    </section>
+
+    <section id="projectView" class="hidden">
+      <section class="card header-card">
+        <div id="projectNumber" class="muted"></div>
+        <div id="projectFocus" class="eyebrow"></div>
+        <h1 id="projectTitle"></h1>
+        <p id="projectValue" class="value"></p>
+        <p id="projectHardCore" class="hard"></p>
+        <div id="completion"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-head"><h2>Topics</h2><span id="topicCount"></span></div>
+        <div id="topics" class="chips"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-head"><h2>Manual</h2><span id="stepCount"></span></div>
+        <div id="manual"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-head"><h2>Test Cases</h2><span>5 acceptance checks</span></div>
+        <div id="tests"></div>
+      </section>
+
+      <div class="actions">
+        <button id="completeBtn" class="primary">✓ Mark as Completed</button>
+        <button id="clearBtn" class="ghost">Clear</button>
+        <button id="prevBtn" class="ghost">← Previous</button>
+        <button id="nextBtn" class="ghost">Next →</button>
+      </div>
+    </section>
+  </section>
+</main>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

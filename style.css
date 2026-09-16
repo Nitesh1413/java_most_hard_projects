@@ -1,0 +1,24 @@
+*{box-sizing:border-box}
+:root{--bg:#f6f7f9;--card:#fff;--text:#111827;--muted:#6b7280;--line:#e5e7eb;--accent:#7c3aed;--soft:#f4efff;--good:#15803d;--shadow:0 10px 28px rgba(15,23,42,.06)}
+[data-theme="dark"]{--bg:#0e1014;--card:#151821;--text:#eef1f6;--muted:#9aa3b2;--line:#2b303b;--accent:#a78bfa;--soft:#221a35;--good:#4ade80;--shadow:0 10px 28px rgba(0,0,0,.23)}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.topbar{height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.brand{font-weight:900;letter-spacing:.09em}.sub{font-size:12px;color:var(--muted);margin-top:2px}
+.theme{width:40px;height:40px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:10px;font-size:18px;cursor:pointer}
+.shell{max-width:1450px;margin:auto;display:grid;grid-template-columns:320px 1fr;min-height:calc(100vh - 70px)}
+.sidebar{padding:18px;border-right:1px solid var(--line);position:sticky;top:70px;height:calc(100vh - 70px);overflow:auto}
+.side-title{display:flex;justify-content:space-between;align-items:center;margin:0 0 12px}.side-title span{font-size:12px;color:var(--muted)}
+#search{width:100%;padding:11px 12px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:10px;margin-bottom:10px;outline:none}
+.row{width:100%;display:flex;align-items:center;gap:9px;padding:11px 10px;border:1px solid transparent;background:transparent;color:var(--text);text-align:left;border-radius:10px;cursor:pointer}
+.row:hover,.row.active{background:var(--soft);border-color:#d9c9ff}.row-num{width:24px;color:var(--muted);font-size:12px}.row-name{flex:1;font-size:13px;line-height:1.32}.tick{color:var(--good);font-weight:900}
+.main{padding:24px;min-width:0}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:22px;margin-bottom:14px}
+.home{max-width:920px}.eyebrow{font-size:11px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:34px;letter-spacing:-.04em;margin:9px 0 11px}h2{font-size:18px;margin:0}.home p,.value,.hard{color:var(--muted);line-height:1.7}.hard{margin-top:7px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.stats div{border:1px solid var(--line);border-radius:12px;padding:16px}.stats b{display:block;font-size:28px}.stats span{font-size:12px;color:var(--muted)}
+.muted{font-size:12px;color:var(--muted);margin-bottom:5px}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.section-head span{font-size:12px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:7px}.chip{font-size:12px;padding:7px 9px;border:1px solid var(--line);background:var(--soft);border-radius:999px}
+.step{display:grid;grid-template-columns:40px 1fr;gap:11px;padding:13px;border:1px solid var(--line);border-radius:11px;margin-bottom:9px}.step-num{font-weight:900;color:var(--accent)}.step-task{font-weight:750}.step-learn{font-size:12px;color:var(--muted);margin-top:3px}
+.test{padding:13px;border:1px solid var(--line);border-radius:11px;margin-bottom:9px}.test-title{font-weight:800}.test-purpose{font-size:13px;color:var(--muted);margin-top:4px;line-height:1.5}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}.primary,.ghost{padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--text);cursor:pointer}.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}.primary:disabled{opacity:.45;cursor:not-allowed}
+.badge{display:inline-flex;color:var(--good);font-weight:800;font-size:13px;margin-top:4px}.hidden{display:none}
+@media(max-width:900px){.shell{grid-template-columns:1fr}.sidebar{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line)}#projectList{max-height:320px;overflow:auto}.main{padding:14px}h1{font-size:28px}.stats{grid-template-columns:1fr}}
